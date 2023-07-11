@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="https://thymeleaf.org/"
+      xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout" >
+<head>
+    <meta charset="UTF-8">
+    <title>Contrat</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.0/css/bootstrap.min.css" >
+</head>
+<body>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Titre</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Client</th>
+        <th>Cloture</th>
+    </tr>
+    <tr th:each="c:${listContrats}">
+        <td th:text="${c.id()}"></td>
+<!--        <td th:text="${c.titre()}"></td>-->
+<!--        <td th:text="${c.montant()}"></td>-->
+<!--        <td th:text="${c.client()}"></td>-->
+<!--        <td th:text="${c.cloture()}"></td>-->
+    </tr>
+</table>
+</body>
+</html>
